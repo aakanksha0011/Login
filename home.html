@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <link href="style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <div class="logo">
+            <h1>Welcome to Login Page</h1>
+        <hr>
+         </div>
+        <div class="border">
+            username:<br>
+            <input type="text" name="text" id="username">
+            <br><br>
+
+            password:<br>
+            <input type="text" name="text" id="password">
+            <br>
+
+             <br>
+
+            <button onclick="login()">Submit</button>
+        </div>
+
+<script type="text/javascript">
+    function login()
+    {
+        var uname=document.getElementById('username').value;
+        var pass=document.getElementById('password').value;
+
+
+        if (uname=="world" && pass=="123")
+        {
+            location.assign("file:///C:/VisualCode/Login/page.html");
+        }
+        else{
+            window.alert("login failed")
+        }
+    }
+</script>
+    </body>
+</html>    
